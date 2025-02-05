@@ -1848,14 +1848,32 @@
       } else if (tipoFooterValue === "carta-confirmacion") {
         if (idiomaValue === "es") {
           if (direccionValue) {
-            plantilla = `<style> @media screen and (max-width: 900px) { .row-content { width: 100% !important; max-width: 100% !important; } } </style>
+            plantilla = `<style>
+	@media screen and (max-width: 900px) {
+		.row-content {
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+	}
+</style>
+<!DOCTYPE html>
 <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
 
 <head>
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!-->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css"><!--<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if mso]>
+		<xml>
+			<o:OfficeDocumentSettings>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+				<o:AllowPNG/>
+			</o:OfficeDocumentSettings>
+		</xml>
+	<![endif]-->
+	<!--[if !mso]><!-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
+	<!--<![endif]-->
 	<style>
 		* {
 			box-sizing: border-box;
@@ -1947,7 +1965,15 @@
 				height: 1px !important;
 			}
 		}
-	</style><!--[if mso ]><style>sup, sub { font-size: 100% !important; } sup { mso-text-raise:10% } sub { mso-text-raise:-10% }</style> <![endif]--><!--[if true]><style>.forceBgColor{background-color: white !important}</style><![endif]-->
+	</style>
+	<!--[if mso ]>
+		<style>
+			sup, sub { font-size: 100% !important; }
+			sup { mso-text-raise:10% }
+			sub { mso-text-raise:-10% }
+		</style>
+	<![endif]-->
+	<!--[if true]><style>.forceBgColor{background-color: white !important}</style><![endif]-->
 </head>
 
 <body class="body forceBgColor" style="background-color: transparent; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
@@ -1993,7 +2019,11 @@
 														<tr>
 															<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
 																<div class="alignment" align="left" style="line-height:10px">
-																	<div style="max-width: 160px;"><a href="https://bcocongresos.com/" target="_blank" style="outline:none" tabindex="-1"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/558435_539723/Logo_Bco_Congresos_negro.png" style="display: block; height: auto; border: 0; width: 100%;" width="160" alt="Bco Congresos" title="Bco Congresos" height="auto"></a></div>
+																	<div style="max-width: 160px;">
+																		<a href="https://bcocongresos.com/" target="_blank" style="outline:none" tabindex="-1">
+																			<img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/558435_539723/Logo_Bco_Congresos_negro.png" style="display: block; height: auto; border: 0; width: 100%;" width="160" alt="Bco Congresos" title="Bco Congresos" height="auto">
+																		</a>
+																	</div>
 																</div>
 															</td>
 														</tr>
@@ -2013,10 +2043,12 @@
 														<tr>
 															<td class="pad" style="padding-left:10px;">
 																<div style="color:#272626;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:13px;font-weight:500;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:15.6px;">
-																	<p style="margin: 0; margin-bottom: 5px;"><a href="https://seup2025.com/" target="_blank" title="https://seup2025.com/" style="text-decoration: none; color: #272626;" rel="noopener">moto</a></p>
+																	<p style="margin: 0; margin-bottom: 5px;">Pl. Europa, 17-19 1ª planta - 08908</p>
+																	<p style="margin: 0; margin-bottom: 5px;"><a href="https://seup2025.com/" target="_blank" title="https://seup2025.com/" style="text-decoration: none; color: #272626;" rel="noopener">L’Hospitalet de Llobregat, Barcelona</a></p>
+																	<p style="margin: 0; margin-bottom: 5px;">moto</p>
 																	<p style="margin: 0; margin-bottom: 5px;"><a href="mailto:coche" rel="noopener" target="_blank" title="coche" style="text-decoration: none; color: #272626;">coche</a></p>
 																	<p style="margin: 0; margin-bottom: 5px;"></p>
-																	<p style="margin: 0;">numero</p>
+																	<p style="margin: 0;"></p>
 																</div>
 															</td>
 														</tr>
@@ -2058,7 +2090,8 @@
 				</td>
 			</tr>
 		</tbody>
-	</table><!-- End -->
+	</table>
+	<!-- End -->
 </body>
 
 </html>`;
@@ -2280,14 +2313,32 @@
           }
         } else if (idiomaValue === "en") {
           if (direccionValue) {
-            plantilla = `<style> @media screen and (max-width: 900px) { .row-content { width: 100% !important; max-width: 100% !important; } } </style>
+            plantilla = `<style>
+	@media screen and (max-width: 900px) {
+		.row-content {
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+	}
+</style>
+<!DOCTYPE html>
 <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
 
 <head>
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!-->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css"><!--<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if mso]>
+		<xml>
+			<o:OfficeDocumentSettings>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+				<o:AllowPNG/>
+			</o:OfficeDocumentSettings>
+		</xml>
+	<![endif]-->
+	<!--[if !mso]><!-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
+	<!--<![endif]-->
 	<style>
 		* {
 			box-sizing: border-box;
@@ -2379,7 +2430,15 @@
 				height: 1px !important;
 			}
 		}
-	</style><!--[if mso ]><style>sup, sub { font-size: 100% !important; } sup { mso-text-raise:10% } sub { mso-text-raise:-10% }</style> <![endif]--><!--[if true]><style>.forceBgColor{background-color: white !important}</style><![endif]-->
+	</style>
+	<!--[if mso ]>
+		<style>
+			sup, sub { font-size: 100% !important; }
+			sup { mso-text-raise:10% }
+			sub { mso-text-raise:-10% }
+		</style>
+	<![endif]-->
+	<!--[if true]><style>.forceBgColor{background-color: white !important}</style><![endif]-->
 </head>
 
 <body class="body forceBgColor" style="background-color: transparent; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
@@ -2425,7 +2484,11 @@
 														<tr>
 															<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
 																<div class="alignment" align="left" style="line-height:10px">
-																	<div style="max-width: 160px;"><a href="https://bcocongresos.com/" target="_blank" style="outline:none" tabindex="-1"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/558435_539723/Logo_Bco_Congresos_negro.png" style="display: block; height: auto; border: 0; width: 100%;" width="160" alt="Bco Congresos" title="Bco Congresos" height="auto"></a></div>
+																	<div style="max-width: 160px;">
+																		<a href="https://bcocongresos.com/" target="_blank" style="outline:none" tabindex="-1">
+																			<img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/558435_539723/Logo_Bco_Congresos_negro.png" style="display: block; height: auto; border: 0; width: 100%;" width="160" alt="Bco Congresos" title="Bco Congresos" height="auto">
+																		</a>
+																	</div>
 																</div>
 															</td>
 														</tr>
@@ -2445,10 +2508,12 @@
 														<tr>
 															<td class="pad" style="padding-left:10px;">
 																<div style="color:#272626;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:13px;font-weight:500;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:15.6px;">
-																	<p style="margin: 0; margin-bottom: 5px;"><a href="https://seup2025.com/" target="_blank" title="https://seup2025.com/" style="text-decoration: none; color: #272626;" rel="noopener">moto</a></p>
+																	<p style="margin: 0; margin-bottom: 5px;">Pl. Europa, 17-19 1ª planta - 08908</p>
+																	<p style="margin: 0; margin-bottom: 5px;"><a href="https://seup2025.com/" target="_blank" title="https://seup2025.com/" style="text-decoration: none; color: #272626;" rel="noopener">L’Hospitalet de Llobregat, Barcelona</a></p>
+																	<p style="margin: 0; margin-bottom: 5px;">moto</p>
 																	<p style="margin: 0; margin-bottom: 5px;"><a href="mailto:coche" rel="noopener" target="_blank" title="coche" style="text-decoration: none; color: #272626;">coche</a></p>
 																	<p style="margin: 0; margin-bottom: 5px;"></p>
-																	<p style="margin: 0;">numero</p>
+																	<p style="margin: 0;"></p>
 																</div>
 															</td>
 														</tr>
@@ -2490,7 +2555,8 @@
 				</td>
 			</tr>
 		</tbody>
-	</table><!-- End -->
+	</table>
+	<!-- End -->
 </body>
 
 </html>`;
@@ -2712,14 +2778,32 @@
           }
         } else if (idiomaValue === "ca") {
           if (direccionValue) {
-            plantilla = `<style> @media screen and (max-width: 900px) { .row-content { width: 100% !important; max-width: 100% !important; } } </style>
+            plantilla = `<style>
+	@media screen and (max-width: 900px) {
+		.row-content {
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+	}
+</style>
+<!DOCTYPE html>
 <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
 
 <head>
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!-->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css"><!--<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if mso]>
+		<xml>
+			<o:OfficeDocumentSettings>
+				<o:PixelsPerInch>96</o:PixelsPerInch>
+				<o:AllowPNG/>
+			</o:OfficeDocumentSettings>
+		</xml>
+	<![endif]-->
+	<!--[if !mso]><!-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
+	<!--<![endif]-->
 	<style>
 		* {
 			box-sizing: border-box;
@@ -2811,7 +2895,15 @@
 				height: 1px !important;
 			}
 		}
-	</style><!--[if mso ]><style>sup, sub { font-size: 100% !important; } sup { mso-text-raise:10% } sub { mso-text-raise:-10% }</style> <![endif]--><!--[if true]><style>.forceBgColor{background-color: white !important}</style><![endif]-->
+	</style>
+	<!--[if mso ]>
+		<style>
+			sup, sub { font-size: 100% !important; }
+			sup { mso-text-raise:10% }
+			sub { mso-text-raise:-10% }
+		</style>
+	<![endif]-->
+	<!--[if true]><style>.forceBgColor{background-color: white !important}</style><![endif]-->
 </head>
 
 <body class="body forceBgColor" style="background-color: transparent; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
@@ -2857,7 +2949,11 @@
 														<tr>
 															<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
 																<div class="alignment" align="left" style="line-height:10px">
-																	<div style="max-width: 160px;"><a href="https://bcocongresos.com/" target="_blank" style="outline:none" tabindex="-1"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/558435_539723/Logo_Bco_Congresos_negro.png" style="display: block; height: auto; border: 0; width: 100%;" width="160" alt="Bco Congresos" title="Bco Congresos" height="auto"></a></div>
+																	<div style="max-width: 160px;">
+																		<a href="https://bcocongresos.com/" target="_blank" style="outline:none" tabindex="-1">
+																			<img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/558435_539723/Logo_Bco_Congresos_negro.png" style="display: block; height: auto; border: 0; width: 100%;" width="160" alt="Bco Congresos" title="Bco Congresos" height="auto">
+																		</a>
+																	</div>
 																</div>
 															</td>
 														</tr>
@@ -2877,10 +2973,12 @@
 														<tr>
 															<td class="pad" style="padding-left:10px;">
 																<div style="color:#272626;direction:ltr;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:13px;font-weight:500;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:15.6px;">
-																	<p style="margin: 0; margin-bottom: 5px;"><a href="https://seup2025.com/" target="_blank" title="https://seup2025.com/" style="text-decoration: none; color: #272626;" rel="noopener">moto</a></p>
+																	<p style="margin: 0; margin-bottom: 5px;">Pl. Europa, 17-19 1ª planta - 08908</p>
+																	<p style="margin: 0; margin-bottom: 5px;"><a href="https://seup2025.com/" target="_blank" title="https://seup2025.com/" style="text-decoration: none; color: #272626;" rel="noopener">L’Hospitalet de Llobregat, Barcelona</a></p>
+																	<p style="margin: 0; margin-bottom: 5px;">moto</p>
 																	<p style="margin: 0; margin-bottom: 5px;"><a href="mailto:coche" rel="noopener" target="_blank" title="coche" style="text-decoration: none; color: #272626;">coche</a></p>
 																	<p style="margin: 0; margin-bottom: 5px;"></p>
-																	<p style="margin: 0;">numero</p>
+																	<p style="margin: 0;"></p>
 																</div>
 															</td>
 														</tr>
@@ -2922,7 +3020,8 @@
 				</td>
 			</tr>
 		</tbody>
-	</table><!-- End -->
+	</table>
+	<!-- End -->
 </body>
 
 </html>`;
